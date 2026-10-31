@@ -5,9 +5,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: { DEFAULT: "#0A0A0B", 900: "#0E0E10", 800: "#141417", 700: "#1C1C20" },
-        bone: "#F4F1EA",
-        gold: { DEFAULT: "#C9A96E", soft: "#E3CFA4" },
+        ink: { DEFAULT: "#06080C", 900: "#090D14", 800: "#0E1520", 700: "#15202F" },
+        bone: "#EEF3F8",
+        // Brand blue, sampled from the client's gradient reference
+        azure: { DEFAULT: "#1E7BB0", soft: "#7DBCE2", deep: "#0B3A5C", abyss: "#071F33" },
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

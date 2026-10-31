@@ -28,10 +28,11 @@ export default function Hero() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.8, ease }}
       >
-        <Image src={heroImage} alt="Campanha LC Imports" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src={heroImage} alt="Campanha LC Imports" fill priority quality={90} placeholder="blur" sizes="100vw" className="object-cover object-center" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_30%,#0A0A0B_95%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_30%,#06080C_95%)]" />
+      <div className="absolute -left-24 bottom-1/4 h-80 w-80 rounded-full bg-azure-deep/40 blur-[100px]" />
 
       <motion.div style={{ opacity: fade }} className="container-x relative pb-[max(3.5rem,env(safe-area-inset-bottom))] pt-32">
         <motion.div
@@ -41,14 +42,14 @@ export default function Hero() {
           className="mb-8 flex items-center gap-4"
         >
           <Logo size="sm" />
-          <span className="h-px w-10 bg-gold/60" />
-          <span className="eyebrow">Coleção Inverno 26</span>
+          <span className="h-px w-10 bg-azure/60" />
+          <span className="eyebrow">Motorsport &amp; Jordan</span>
         </motion.div>
 
         <h1 className="font-display text-[3.4rem] font-light leading-[1.02] tracking-tight sm:text-7xl lg:text-8xl">
           {["Autêntico.", "Importado.", "Inconfundível."].map((w, i) => (
             <span key={w} className="-my-[0.06em] block overflow-hidden py-[0.06em]">
-              <motion.span className={`block ${i === 2 ? "italic text-gold-soft" : ""}`} variants={line} initial="hidden" animate="show" custom={i}>
+              <motion.span className={`block ${i === 2 ? "text-brand pr-2 italic" : ""}`} variants={line} initial="hidden" animate="show" custom={i}>
                 {w}
               </motion.span>
             </span>
@@ -86,7 +87,7 @@ export default function Hero() {
       >
         <span className="eyebrow [writing-mode:vertical-rl]">Scroll</span>
         <span className="h-12 w-px overflow-hidden bg-bone/10">
-          <motion.span className="block h-1/2 w-px bg-gold" animate={{ y: ["-100%", "200%"] }} transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }} />
+          <motion.span className="block h-1/2 w-px bg-azure" animate={{ y: ["-100%", "200%"] }} transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }} />
         </span>
       </motion.div>
     </section>

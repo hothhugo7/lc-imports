@@ -1,10 +1,17 @@
-// Wordmark placeholder — replace with the client's logo file (e.g. /public/brand/logo.svg).
-export default function Logo({ className = "", size = "md" }: { className?: string; size?: "sm" | "md" | "lg" }) {
-  const sizes = { sm: "text-xl", md: "text-2xl", lg: "text-5xl sm:text-6xl" };
+import Image from "next/image";
+import logo from "@/public/brand/logo.png";
+
+const sizes = { sm: "h-11 w-auto", md: "h-20 w-auto", lg: "h-48 w-auto sm:h-56" };
+
+export default function Logo({ className = "", size = "md", priority }: { className?: string; size?: keyof typeof sizes; priority?: boolean }) {
   return (
-    <span className={`inline-flex flex-col items-center leading-none ${className}`}>
-      <span className={`font-display font-medium tracking-[0.14em] ${sizes[size]}`}>LC</span>
-      <span className="mt-1 text-[8px] uppercase tracking-[0.5em] text-bone/60">Imports</span>
-    </span>
+    <Image
+      src={logo}
+      alt="LC Imports"
+      priority={priority}
+      quality={95}
+      sizes="(max-width: 640px) 240px, 320px"
+      className={`select-none ${sizes[size]} ${className}`}
+    />
   );
 }

@@ -53,7 +53,7 @@ export default function Header() {
             </button>
             <button aria-label="Carrinho" className={`${iconBtn} relative`}>
               <ShoppingBag size={19} strokeWidth={1.4} />
-              <span className="absolute right-2 top-2 grid h-4 w-4 place-items-center rounded-full bg-gold text-[9px] font-semibold text-ink">2</span>
+              <span className="absolute right-2 top-2 grid h-4 w-4 place-items-center rounded-full bg-azure text-[9px] font-semibold text-ink">2</span>
             </button>
           </div>
         </div>

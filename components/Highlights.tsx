@@ -13,7 +13,7 @@ export default function Highlights() {
       <div className="container-x">
         <SectionTitle
           eyebrow="Destaques da semana"
-          title={<>Peças que <em className="text-gold-soft">falam</em> por você</>}
+          title={<>Peças que <em className="text-azure-soft">falam</em> por você</>}
           copy="Uma curadoria enxuta do que há de mais desejado agora. Estoque limitado."
         />
       </div>
@@ -34,6 +34,8 @@ export default function Highlights() {
                 src={p.image}
                 alt={p.name}
                 fill
+                quality={90}
+                placeholder="blur"
                 sizes="(min-width:1024px) 25vw, 74vw"
                 className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
               />

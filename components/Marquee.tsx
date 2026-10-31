@@ -7,7 +7,7 @@ function Row() {
         phrases.map((p) => (
           <span key={`${i}-${p}`} className="flex items-center">
             <span className="whitespace-nowrap px-8 text-[10px] uppercase tracking-[0.3em] text-bone/70">{p}</span>
-            <span className="h-1 w-1 rotate-45 bg-gold/70" />
+            <span className="h-1 w-1 rotate-45 bg-azure/70" />
           </span>
         ))
       )}
