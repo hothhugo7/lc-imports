@@ -7,6 +7,7 @@ export default function Footer() {
         <Logo size="md" />
         <p className="max-w-xs text-sm text-bone/45">Autenticidade em cada detalhe. Envios para todo Brasil.</p>
         <p className="eyebrow">© {new Date().getFullYear()} LC Imports</p>
+        <p className="text-[10px] text-bone/30">Prévia visual — compras, busca e carrinho ainda não estão ativos.</p>
       </div>
     </footer>
   );
